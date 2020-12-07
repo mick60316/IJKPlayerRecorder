@@ -6,15 +6,15 @@
 
 *程式流程:
 
- **IJKPlayer串接HTTP影片
+ ** IJKPlayer串接HTTP影片
 
- **利用Textureview將IJK的影像接出來轉成Bitmap
+ ** 利用Textureview將IJK的影像接出來轉成Bitmap
 
- **Bitmap轉換成OpenCV所使用的Mat
+ ** Bitmap轉換成OpenCV所使用的Mat
 
- **利用OpenCV VideoWriter將影像寫成video
+ ** 利用OpenCV VideoWriter將影像寫成video
 
- **因播放格式的關係，需要再利用ffmpeg將video recoode一次，轉換成手機能撥放的格式
+ ** 因播放格式的關係，需要再利用ffmpeg將video recoode一次，轉換成手機能撥放的格式
 
 ## Install:
 
