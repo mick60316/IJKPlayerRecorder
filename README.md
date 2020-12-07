@@ -1,9 +1,10 @@
 # IJKPlayerRecorder
 
 - Overview
+
 提供IJKPlayer串接Http的[影片](http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4)，並且利用OpenCV將影片側錄下來。
 
-程式流程:
+- 程式流程:
 
  IJKPlayer串接HTTP影片
 
