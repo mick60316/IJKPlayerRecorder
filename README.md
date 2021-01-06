@@ -23,3 +23,6 @@
 [IJKplayer](https://www.jianshu.com/p/c5d972ab0309)
 
 [FFmpeg](/tanersener/mobile-ffmpeg)
+
+implementation 'com.arthenica:mobile-ffmpeg-full-gpl:4.3.1'
+
