@@ -1,4 +1,4 @@
-package com.example.ijkplayerrecorder;
+package com.example.ijkplayerrecorder.Helper;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -112,21 +112,14 @@ public class MikeVideoPlayer implements TextureView.SurfaceTextureListener {
     @Override
     public void onSurfaceTextureUpdated(@NonNull SurfaceTexture surfaceTexture) {
         //System.out.println("Update");
-
         if (isRecord) {
             Bitmap bitmap = textureView.getBitmap();
             Mat mat = new Mat();
             Bitmap bmp32 = bitmap.copy(Bitmap.Config.RGB_565, true);
             Utils.bitmapToMat(bmp32, mat);
             Imgproc.resize(mat,mat,videoSize);
-
             videoBuffer.add(mat);
-
         }
-
-
-
-
     }
 
     public boolean RecordVideo(String fileName)

@@ -6,8 +6,8 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="8"
-8-->C:\Users\Mike_Lu\Desktop\Development\Android\IJKPlayerRecorder\openCVLibrary349\src\main\AndroidManifest.xml
+8-->/Users/mikelu/Desktop/Development/Android/IJKPlayerRecorder/openCVLibrary349/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="21" />
-9-->C:\Users\Mike_Lu\Desktop\Development\Android\IJKPlayerRecorder\openCVLibrary349\src\main\AndroidManifest.xml
+9-->/Users/mikelu/Desktop/Development/Android/IJKPlayerRecorder/openCVLibrary349/src/main/AndroidManifest.xml
 10
 11</manifest>
