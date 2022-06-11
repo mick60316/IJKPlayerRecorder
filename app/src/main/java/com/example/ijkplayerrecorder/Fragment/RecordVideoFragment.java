@@ -70,6 +70,9 @@ public class RecordVideoFragment extends Fragment {
             Log.i("mike", "opencv not loaded");
             OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION, context, baseLoaderCallback);
         }
+        AppCompatActivity activity =(AppCompatActivity) context;
+        activity.getSupportActionBar().setTitle("Record Video");
+
     }
 
     BaseLoaderCallback baseLoaderCallback = new BaseLoaderCallback(context) {
