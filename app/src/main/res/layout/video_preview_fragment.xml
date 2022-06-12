@@ -4,4 +4,10 @@
     android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <Button
+        android:id="@+id/test_button"
+        android:layout_height="300px"
+        android:layout_width="300px"
+        tools:ignore="MissingConstraints">
+    </Button>>
 </androidx.constraintlayout.widget.ConstraintLayout>

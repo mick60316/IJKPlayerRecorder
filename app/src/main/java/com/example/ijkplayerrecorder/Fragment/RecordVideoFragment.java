@@ -20,6 +20,7 @@ import com.example.ijkplayerrecorder.R;
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
+import org.opencv.videoio.VideoCapture;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -57,6 +58,8 @@ public class RecordVideoFragment extends Fragment {
                 recordButton.setText(buttonText);
             }
         });
+
+
     }
 
     @Override

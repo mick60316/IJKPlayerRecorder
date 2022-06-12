@@ -33,7 +33,6 @@ public class VideoPreviewHelper extends AsyncTask<VideoPreviewInfo,Integer ,Bitm
         }
     };
 
-
     public VideoPreviewHelper (ImageView imageView)
     {
         this.imageView=imageView;

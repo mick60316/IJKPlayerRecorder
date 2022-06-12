@@ -1,6 +1,5 @@
 package com.example.ijkplayerrecorder.Fragment;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
@@ -18,10 +17,6 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.ijkplayerrecorder.Components.RecycleViewAdapter;
 import com.example.ijkplayerrecorder.DataStruct.VideoPreviewInfo;
 import com.example.ijkplayerrecorder.Helper.VideoPreviewHelper;
 import com.example.ijkplayerrecorder.R;
@@ -34,7 +29,7 @@ public class VideoPreviewFragment extends Fragment {
     private ConstraintLayout rootLayout;
     List<VideoPreviewInfo> testData = Arrays.asList(
             new VideoPreviewInfo("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",50),
-            new VideoPreviewInfo("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",50),
+            new VideoPreviewInfo("rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mp4",50),
             new VideoPreviewInfo("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",50),
             new VideoPreviewInfo("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",50),
             new VideoPreviewInfo("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",50),
@@ -62,9 +57,9 @@ public class VideoPreviewFragment extends Fragment {
         linearLayout.setOrientation(LinearLayout.VERTICAL);
         linearLayout.setLayoutParams(linearParams);
 
+        LayoutInflater inflater = LayoutInflater.from(context);
         for (VideoPreviewInfo videoPreviewInfo: testData)
         {
-            LayoutInflater inflater = LayoutInflater.from(context);
             View _view = inflater.inflate(R.layout.vidoe_preview_item, null, false);
             TextView _textview =_view.findViewById(R.id.video_url);
             ImageView _imageview =_view.findViewById(R.id.video_preview);
@@ -74,7 +69,7 @@ public class VideoPreviewFragment extends Fragment {
             linearLayout.addView(_view);
         }
         scrollView.addView(linearLayout);
-        rootLayout.addView(scrollView);
+        //rootLayout.addView(scrollView);
 
     }
 
